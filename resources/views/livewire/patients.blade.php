@@ -12,6 +12,9 @@
         <div class="text-2xl">Patients</div>
         <div>
             <x-jet-button wire:click="confirmPatientAdd" class="bg-sky-500 hover:bg-sky-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
                 Add New Patient
             </x-jet-button>
         </div>
