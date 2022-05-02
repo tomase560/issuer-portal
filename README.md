@@ -1,1 +1,1 @@
-About the portal
+This project is about hyperledger aries issuer agent.
