@@ -19,4 +19,8 @@ class Patient extends Model
     public function user() {
         return $this->belongsTo(\App\Model\User::class);
     }
+
+    public function connections() {
+        return $this->hasMany(\App\Models\Connection::class);
+    }
 }

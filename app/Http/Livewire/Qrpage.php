@@ -8,8 +8,9 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 class Qrpage extends Component
 {
 
-    public bool $confirmingConnectionAdd = false;
-    public $issueCredential = false;
+    public $confirmingConnectionAdd = false;
+    public $confirmingSchemaAdd = false;
+    public $confirmingCertificateIssue = false;
 
     public function render()
     {
@@ -20,11 +21,23 @@ class Qrpage extends Component
         $this->confirmingConnectionAdd = true;
     }
 
-    public function saveConnection() {
-
+    public function confirmSchemaAdd() {
+        $this->confirmingSchemaAdd = true;
     }
 
-    // public function issueCredential() {
-    //     $this->msg = "Testing successful.";
-    // }
+    public function confirmCertificateIssue() {
+        $this->confirmingCertificateIssue = true;
+    }
+
+    public function saveConnection() {
+        //To Do
+    }
+
+    public function saveSchema() {
+        //To Do
+    }
+
+    public function issueCertificate() {
+        //To Do  
+    }
 }
